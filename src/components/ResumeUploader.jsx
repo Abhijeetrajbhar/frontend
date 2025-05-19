@@ -53,7 +53,7 @@ const ResumeUploader = () => {
       setUploadProgress(0);
       setSkills({});
 
-      const response = await axios.post("http://192.168.92.3:8000/upload/", formData, {
+      const response = await axios.post("https://backend-production-e16f.up.railway.app/upload/", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
